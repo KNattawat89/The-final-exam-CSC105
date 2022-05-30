@@ -60,10 +60,10 @@ const About = (props) => {
        </div>
        <hr/>
           <div className="row mt-5">
-             <div className="col-6">
+          <div  className="col-12 col-md-6">
              <RenderCard item={props.aboutme} />
              </div>
-             <div className="col-6 d-flex align-items-center">
+             <div className="col-12 col-md-6 d-flex align-items-center">
                <RenderCardBody item={props.aboutme}/>
             </div>
             </div>
@@ -75,7 +75,7 @@ const About = (props) => {
                 
                 {a.map((e1) => { 
                  return (
-                     <div className="col-4">
+                    <div  className="col-12 col-md-4">
                         <RenderPhoto photo={e1}/>
                      </div>
                  )
@@ -90,7 +90,7 @@ const About = (props) => {
             <div className="row mt-5 mb-5">
                  {b.map((e2)=> {
                      return (
-                         <div className="col-4"> 
+                        <div  className="col-12 col-md-4">
                           <RenderPhoto photo={e2}/>
                          </div>
                      );
