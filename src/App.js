@@ -3,18 +3,15 @@ import './App.css';
 import { Navbar, NavbarBrand } from 'reactstrap';
 import MainComponent from './components/MainComponent';
 import { Component } from 'react';
+import { BrowserRouter } from 'react-router-dom';
 class App extends Component {
- constructor(props){
-   super(props);
-   this.state= {
-   
-   }
- }
 render() {
   return (
-    <div className="App">
-     <MainComponent/>
+    <BrowserRouter>
+    <div className="App">  
+         <MainComponent/>
   </div>
+  </BrowserRouter>
 
   );
 }
